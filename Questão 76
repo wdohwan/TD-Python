@@ -1,0 +1,16 @@
+a = int(input('Quantas temperaturas você deseja inserir?: '))
+maior = 0
+menor = 0
+s = 0
+for x in range (1,a+1):
+    v = int(input('Insira a {}ª temperatura: '.format(x)))
+    s += v
+    if x == 1:
+        maior = v
+        menor = v
+    else:
+        if v > maior:
+            maior = v
+        if v < menor:
+            menor = v
+print ('A maior temperatura foi {}ºC, a menor temperatura foi {}ºC e a média das temperaturas foi de {}ºC. '.format(maior,menor,s/a))
