@@ -1,0 +1,18 @@
+a = 0
+c1 = 0
+c2 = 0
+c3 = 0
+c4 = 0
+while a>=0:
+    a = int(input('Insira um número: '))
+    if a>=0 and a<=25:
+        c1 += 1
+    elif a>=26 and a<=50:
+        c2 += 1
+    elif a>=51 and a<=75:
+        c3 += 1
+    elif a>=76 and a<=100:
+        c4 +=1
+    else:
+        c1 += 0
+print('Houveram {} números no intervalo de [0-25], {} números no intervalo [26-50], {} números no intervalo [51-75] e {} números no intervalo [76-100]'.format(c1,c2,c3,c4))
