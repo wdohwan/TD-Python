@@ -1,0 +1,4 @@
+ini = 1.99
+for x in range (1,51):
+    print ('{} - {:.2f}R$'.format(x,ini))
+    ini +=1.99
