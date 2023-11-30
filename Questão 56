@@ -1,0 +1,18 @@
+from tkinter import END
+
+
+a = int(input('Insira um número: '))
+b = int(input('Insira outro número: '))
+s = 0
+if a<b:
+    while a<b:
+        a += 1
+        print (a, end=', ')
+        s += a
+    print ('A soma dos números do intervalo é {}'.format(s))
+else:
+    while b<a:
+        b += 1
+        print (b, end=', ')
+        s += a
+    print ('A soma dos números do intervalo é {}'.format(s))
