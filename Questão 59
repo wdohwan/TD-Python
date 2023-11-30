@@ -1,0 +1,10 @@
+n = 0
+pares = 0
+impares = 0
+for x in range (1, 11):
+    n = int(input('Insira o {}º número: '.format(x)))
+    if n%2==0:
+        pares += 1
+    else:
+        impares += 1
+print ('Você inseriu {} números pares e {} números ímpares.'.format(pares, impares))
