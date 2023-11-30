@@ -1,0 +1,8 @@
+PESSOAS = 5
+idades = []
+alturas = []
+for i in range(PESSOAS):
+    idades.append(int(input(f"Digite a idade da pessoa {i+1}: ")))
+    alturas.append(float(input(f"Digite a altura da pessoa {i+1} em cm: ")))
+for i in range(PESSOAS - 1, -1, -1):
+    print(f"A pessoa {i+1} mede {alturas[i]:.2f}cm e tem {idades[i]} ano(s)")
