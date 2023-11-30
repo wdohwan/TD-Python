@@ -1,0 +1,16 @@
+a = int(input('Quantos valores você deseja inserir?: '))
+maior = 0
+menor = 0
+s = 0
+for x in range (1,a+1):
+    v = int(input('Insira o {}º valor(entre 0 e 1000): '.format(x)))
+    s += v
+    if x == 1:
+        maior = v
+        menor = v
+    else:
+        if v > maior:
+            maior = v
+        if v < menor:
+            menor = v
+print ('O maior número do conjunto foi {}, o menor número do conjunto foi {} e a soma dos valores foi de {}. '.format(maior,menor,s))
